@@ -1,0 +1,20 @@
+<%= render 'layouts/error', :object => @product %>
+<%=form_for(@product) do |f| %>
+
+  <div class="form_group">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="form_group">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+
+  <div class="form_group">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <br>
+<%= f.submit(:class => "btn btn-primary") %>
+<% end %>

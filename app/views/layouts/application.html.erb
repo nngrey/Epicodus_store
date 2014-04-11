@@ -8,9 +8,20 @@
 </head>
 <body>
 <div class = "container">
+
+  <div>
+    <% if current_user %>
+      Logged in as <%= current_user.email %>.
+      <%= link_to "Log Out", logout_path %>
+    <% end %>
+  </div>
+
   <%= flash[:notice] %>
   <%= flash[:alert] %>
+
+
   <%= yield %>
+
 </div>
 
 </body>

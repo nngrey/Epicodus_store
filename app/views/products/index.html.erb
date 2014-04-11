@@ -1,1 +1,22 @@
-<h1>Hello</h1>
+<div class="jumbotron">
+  <div class="container">
+  <h1>The Everything Tara Store! </h1>
+  <!-- <img src='/images/taralogo.png' alt="A Logo of Tara" class="img-circle"> -->
+  <h4><em>"If Tara wants it...you should too!!!"</em></h4>
+  </div>
+</div>
+
+<% @products.each do |product| %>
+<h3><%= link_to product.name, product_path(product) %></h3> <%= number_to_currency(product.price) %>
+
+<% end %>
+
+
+
+<hr>
+<% if current_user %>
+    <%= link_to "Add Products", new_product_path, :class => "btn btn-primary" %>
+
+<% else %>
+  <%= link_to "Employee Login", new_session_path %>
+<% end %>

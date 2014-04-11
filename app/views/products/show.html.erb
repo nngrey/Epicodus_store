@@ -1,0 +1,13 @@
+<h3><%= @product.name %> </h3> <%= number_to_currency(@product.price) %>
+<p><%= @product.description %></p>
+
+<hr>
+<% if current_user %>
+  <p><%= link_to "Edit Product", edit_product_path(@product), :class => "btn btn-primary" %></p>
+  <p><%= link_to "Delete Product", product_path(@product),
+                              data: { confirm: 'You sure?' },
+                              method: "delete",
+                              :class => "btn btn-danger" %></p>
+<% end %>
+<%= link_to "Homepage", products_path, :class => "btn btn-primary" %>
+
