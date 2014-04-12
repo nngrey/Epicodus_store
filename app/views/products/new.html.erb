@@ -3,3 +3,9 @@
 <%= render 'form' %>
 <br>
 <%= link_to "Main Menu", root_url, :class => "btn btn-primary" %>
+
+<h2>Import Products</h2>
+<%= form_tag product_uploads_path, method: 'post', multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

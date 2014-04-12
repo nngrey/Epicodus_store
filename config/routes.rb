@@ -5,6 +5,7 @@ Store::Application.routes.draw do
   resources :users
   resources :sessions
   resources :products
+  resources :product_uploads
 
   root to: 'products#index'
 end

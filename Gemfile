@@ -13,6 +13,7 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'bcrypt'
 # gem 'therubyracer'
 gem 'factory_girl'
+gem 'smarter_csv'
 
 group :development do
   gem 'better_errors'

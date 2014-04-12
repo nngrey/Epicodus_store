@@ -141,6 +141,7 @@ GEM
       activesupport (>= 3)
     shoulda-matchers (2.5.0)
       activesupport (>= 3.0.0)
+    smarter_csv (1.0.17)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -190,5 +191,6 @@ DEPENDENCIES
   sass-rails
   shoulda-callback-matchers
   shoulda-matchers
+  smarter_csv
   turbolinks
   uglifier
