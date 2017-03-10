@@ -1,4 +1,4 @@
-==Store
+==Epicodus Exercise
 =Let's make a website for a store.
 
 * As a store owner, I want to create a new entry for a product with a name, price, and description.
